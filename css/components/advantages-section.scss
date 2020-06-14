@@ -1,0 +1,17 @@
+.advantages-section {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 38px solid $red;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    transform: translate(50%, 50%) rotate(16deg);
+  }
+}

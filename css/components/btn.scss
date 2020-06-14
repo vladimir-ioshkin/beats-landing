@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  background: $red;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: $darkred;
+  }
+
+  &_color_transparent {
+    background: transparent;
+    color: #999;
+    text-transform: none;
+
+    &:hover {
+      color: $red;
+      background: none;
+    }
+  }
+}

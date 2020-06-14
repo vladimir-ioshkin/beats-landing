@@ -1,0 +1,23 @@
+.advantage {
+  text-align: center;
+}
+
+.advantage__image-wrap {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  border-radius: 50%;
+  background: $grey;
+  overflow: hidden;
+  margin-bottom: 38px;
+}
+
+.advatange__icon {
+  height: 62px;
+  width: 58px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
