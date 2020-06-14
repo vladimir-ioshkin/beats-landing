@@ -7,7 +7,7 @@ body {
 body {
   font-size: 16px;
   font-family: 'Play', sans-serif;
-  line-height: 1.42;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -69,14 +69,14 @@ img {
   position: relative; }
   .hero::before {
     content: "";
-    background: url("../../img/headphones-img.jpg") 0 0 no-repeat #fff;
+    background: url("../../img/headphones-img.jpg") -5px 7px no-repeat #fff;
     display: block;
     width: 500px;
     height: 500px;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 71%;
+    top: 55%;
+    left: 70%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
   .hero::after {
@@ -87,7 +87,7 @@ img {
     background: #999;
     position: absolute;
     bottom: 0;
-    right: 13%;
+    right: 12.7%;
     -webkit-transform: translate(50%, 50%) rotate(45deg);
             transform: translate(50%, 50%) rotate(45deg); }
 
@@ -110,15 +110,15 @@ img {
 
 .hero__main-title {
   font-size: 48px;
-  line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: -13px 0 22px;
   text-transform: uppercase; }
 
 .hero__title-desc {
   font-size: 18px;
-  margin-bottom: 40px;
-  padding-right: 25%; }
+  margin-bottom: 38px;
+  padding-right: 25%;
+  line-height: 1.35; }
 
 .header {
   display: -webkit-box;
@@ -157,14 +157,15 @@ img {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-right: 15px; }
   .phone-number:hover {
     color: #e01f3d; }
 
 .phone-number__icon-elem {
   width: 12px;
   height: 12px;
-  margin-right: 5px;
+  margin-right: 2px;
   margin-top: 2px; }
 
 .features {
@@ -173,7 +174,7 @@ img {
   display: flex; }
 
 .features__item {
-  margin-right: 46px; }
+  margin-right: 29px; }
   .features__item:last-child {
     margin-right: 0; }
 
@@ -183,16 +184,17 @@ img {
   display: flex; }
 
 .feature__icon {
-  width: 32px;
+  width: 44px;
   margin-right: 8px; }
 
 .feature__text {
-  max-width: 96px; }
+  max-width: 96px;
+  line-height: 1.24; }
 
 .btn {
   display: inline-block;
   font-weight: 700;
-  padding: 18px 35px;
+  padding: 18px 41px;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
@@ -200,13 +202,18 @@ img {
   color: #fff;
   background: #e01f3d;
   cursor: pointer;
-  border: none; }
+  border: none;
+  font-size: 16px; }
   .btn:hover {
     background: #ca1b36; }
   .btn_color_transparent {
     background: transparent;
     color: #999;
-    text-transform: none; }
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 0; }
     .btn_color_transparent:hover {
       color: #e01f3d;
       background: none; }
@@ -232,7 +239,7 @@ img {
 .section__title {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 55px;
+  margin: -4px 0 33px;
   text-align: center;
   color: #000;
   text-transform: uppercase; }
@@ -241,7 +248,8 @@ img {
   text-align: center; }
 
 .headline__title {
-  margin-bottom: 25px; }
+  margin-top: 14px;
+  margin-bottom: 10px; }
 
 .headline__subtitle {
   font-size: 18px;
@@ -255,14 +263,14 @@ img {
     display: block;
     width: 0;
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 38px solid #e01f3d;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #e01f3d;
     position: absolute;
-    bottom: 0;
-    left: 7%;
-    -webkit-transform: translate(50%, 50%) rotate(16deg);
-            transform: translate(50%, 50%) rotate(16deg); }
+    bottom: 3px;
+    left: 2.5%;
+    -webkit-transform: translate(50%, 50%) rotate(-16deg);
+            transform: translate(50%, 50%) rotate(-16deg); }
 
 .advantages {
   display: -webkit-box;
@@ -273,7 +281,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0 3%;
+  padding: 0 5%;
   position: relative; }
   .advantages__item:first-child {
     padding-left: 0; }
@@ -293,7 +301,7 @@ img {
   color: #000;
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 20px; }
+  margin-bottom: 17px; }
 
 .advantage {
   text-align: center; }
@@ -306,7 +314,7 @@ img {
   border-radius: 50%;
   background: #f5f5f5;
   overflow: hidden;
-  margin-bottom: 38px; }
+  margin-bottom: 26px; }
 
 .advatange__icon {
   height: 62px;
@@ -328,7 +336,7 @@ img {
     border-radius: 50%;
     background-color: #999;
     bottom: -4px;
-    left: 9%;
+    left: 5.2%;
     -webkit-transform: translate(50%, 50%);
             transform: translate(50%, 50%); }
 
@@ -378,16 +386,18 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 20px; }
+  margin-left: 20px;
+  padding-top: 12px; }
 
 .reviews__title {
   font-size: 27px;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   color: #000; }
 
 .reviews__text {
-  margin-bottom: 34px; }
+  font-size: 18px;
+  margin-bottom: 30px; }
 
 .reviews__author {
   font-size: 18px;
@@ -426,7 +436,9 @@ img {
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: -5px;
+  font-size: 18px; }
 
 .form__column {
   -webkit-box-flex: 1;
@@ -440,17 +452,25 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px; }
+  margin-bottom: 14px; }
+  .form__row_controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .form__row:last-child {
     margin-bottom: 0; }
-  .form__row_large {
-    margin-bottom: 8px; }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 20px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__title {
+  margin-bottom: 6px; }
 
 .form__input {
   width: 100%;
@@ -470,9 +490,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 8px; }
+  .form__controls:last-child {
+    margin-bottom: 0; }
 
 .form__btns {
-  margin-top: 40px; }
+  margin-top: 43px; }
 
 .radio {
   display: -webkit-box;
@@ -483,7 +505,8 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-right: 20px; }
+  margin-right: 19px;
+  position: relative; }
   .radio_checkbox .radio__visible {
     border-radius: 0; }
     .radio_checkbox .radio__visible::before {
@@ -497,10 +520,11 @@ img {
 .radio__visible {
   width: 26px;
   height: 26px;
-  position: relative;
+  position: absolute;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px; }
+  margin-right: 8px;
+  top: 3px; }
   .radio__visible::before {
     content: "";
     width: 14px;
@@ -514,10 +538,14 @@ img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
+.radio__title {
+  padding-left: 34px;
+  line-height: 1.5; }
+
 .fixed-menu {
   position: fixed;
-  top: 38%;
-  right: 3%;
+  top: 38.4%;
+  right: 3.3%;
   z-index: 100; }
 
 .fixed-menu__item {

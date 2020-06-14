@@ -6,12 +6,12 @@
     display: block;
     width: 0;
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 38px solid $red;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid $red;
     position: absolute;
-    bottom: 0;
-    left: 7%;
-    transform: translate(50%, 50%) rotate(16deg);
+    bottom: 3px;
+    left: 2.5%;
+    transform: translate(50%, 50%) rotate(-16deg);
   }
 }

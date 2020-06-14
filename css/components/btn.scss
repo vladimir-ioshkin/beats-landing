@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   font-weight: 700;
-  padding: 18px 35px;
+  padding: 18px 41px;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
@@ -10,6 +10,7 @@
   background: $red;
   cursor: pointer;
   border: none;
+  font-size: 16px;
 
   &:hover {
     background: $darkred;
@@ -19,6 +20,10 @@
     background: transparent;
     color: #999;
     text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 0;
 
     &:hover {
       color: $red;
