@@ -1,26 +1,42 @@
 .reviews__display {
   background: $grey;
-  padding: 50px 46px 36px;
-  margin-bottom: 20px;
+  padding: 3.125rem 2.875rem 2.25rem;
+  margin-bottom: 1.25rem;
   overflow: hidden;
   position: relative;
+
+  @include tablets {
+    padding: 3.8rem 1rem 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  @include phones {
+    padding: 4rem 1rem;
+    margin-bottom: 1.6rem;
+  }
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: -65px;
+    top: -4.0625rem;
     transform: translate(-50%);
   }
 }
 
 .reviews__display-wrap {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__switcher {
@@ -29,8 +45,18 @@
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 15.875rem;
+  height: 16.25rem;
+
+  @include tablets {
+    width: 8.6rem;
+    height: 8.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  @include phones {
+    margin-bottom: 0.8rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -41,24 +67,47 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
-  padding-top: 12px;
+  margin-left: 1.25rem;
+  padding-top: 0.75rem;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
   color: #000;
+
+  @include tablets {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+  }
 }
 
 .reviews__text {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+
+  @include tablets {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  @include phones {
+    font-size: 1.29rem;
+    margin-bottom: 1.7rem;
+  }
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #000;
+
+  @include tablets {
+    font-size: 1.2rem;
+  }
 }
