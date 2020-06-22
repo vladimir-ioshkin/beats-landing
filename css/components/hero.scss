@@ -5,22 +5,23 @@
   color: #000;
   position: relative;
 
-  &:before {
-    @include tablets {
-      display: none;
-    }
-  }
-
   &::before {
     content: "";
     background: url("../../img/headphones-img.jpg") -0.3125rem 0.4375rem no-repeat #fff;
-    width: 31.25rem;
-    height: 31.25rem;
+    background-size: contain;
+    width: 45vw;
+    height: 45vw;
+    max-width: 31.25rem;
+    max-height: 31.25rem;
     border-radius: 50%;
     position: absolute;
     top: 55%;
     left: 70%;
     transform: translate(-50%, -50%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &::after {
@@ -64,9 +65,9 @@
     padding: 0 12%;
 
     &:before {
-      width: 20.5rem;
-      height: 20.5rem;
-      margin: -2rem 0 1.5rem;
+      width: 20rem;
+      height: 20rem;
+      margin: -2rem 0 1.2rem;
     }
   }
 }

@@ -7,7 +7,7 @@ html {
       font-size: 15px; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 14px; } }
+      font-size: 3vmin; } }
 
 html,
 body {
@@ -79,20 +79,23 @@ img {
   min-height: 40.625rem;
   color: #000;
   position: relative; }
-  @media screen and (max-width: 768px) {
-    .hero:before {
-      display: none; } }
   .hero::before {
     content: "";
     background: url("../../img/headphones-img.jpg") -0.3125rem 0.4375rem no-repeat #fff;
-    width: 31.25rem;
-    height: 31.25rem;
+    background-size: contain;
+    width: 45vw;
+    height: 45vw;
+    max-width: 31.25rem;
+    max-height: 31.25rem;
     border-radius: 50%;
     position: absolute;
     top: 55%;
     left: 70%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    @media screen and (max-width: 768px) {
+      .hero::before {
+        display: none; } }
   .hero::after {
     content: "";
     display: block;
@@ -140,9 +143,9 @@ img {
     .hero__title-section {
       padding: 0 12%; }
       .hero__title-section:before {
-        width: 20.5rem;
-        height: 20.5rem;
-        margin: -2rem 0 1.5rem; } }
+        width: 20rem;
+        height: 20rem;
+        margin: -2rem 0 1.2rem; } }
 
 @media screen and (max-width: 768px) {
   .hero__icons-section {
@@ -330,7 +333,7 @@ img {
   @media screen and (max-width: 480px) {
     .btn {
       font-size: 1.14rem;
-      padding: 1.4rem 3rem; } }
+      padding: 1.2rem 3rem; } }
   .btn:hover {
     background: #ca1b36; }
   .btn_color_transparent {
@@ -389,7 +392,7 @@ img {
   @media screen and (max-width: 480px) {
     .section__title {
       font-size: 2.57rem;
-      margin: 4.5rem 0 1.8rem; } }
+      margin: 4.3rem 0 1.8rem; } }
 
 .headline {
   text-align: center; }
@@ -400,6 +403,9 @@ img {
   @media screen and (max-width: 768px) {
     .headline__title {
       margin: 1.6rem 0 0.6rem; } }
+  @media screen and (max-width: 480px) {
+    .headline__title {
+      margin-top: 1.3rem; } }
 
 .headline__subtitle {
   font-size: 1.125rem;
@@ -501,8 +507,8 @@ img {
       margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .advantage__image-wrap {
-      width: 9rem;
-      height: 9rem;
+      width: 8.5rem;
+      height: 8.5rem;
       margin-bottom: 0;
       margin-right: 0.875rem; } }
 
@@ -561,7 +567,7 @@ img {
   @media screen and (max-width: 480px) {
     .reviews__display {
       padding: 4rem 1rem;
-      margin-bottom: 1.6rem; } }
+      margin-bottom: 1.4rem; } }
   .reviews__display::before {
     content: "";
     display: block;
@@ -608,7 +614,7 @@ img {
       margin-bottom: 1.2rem; } }
   @media screen and (max-width: 480px) {
     .reviews__avatar {
-      margin-bottom: 0.8rem; } }
+      margin-bottom: 0.4rem; } }
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -646,7 +652,7 @@ img {
   @media screen and (max-width: 480px) {
     .reviews__text {
       font-size: 1.29rem;
-      margin-bottom: 1.7rem; } }
+      margin-bottom: 1rem; } }
 
 .reviews__author {
   font-size: 1.125rem;
@@ -788,7 +794,7 @@ img {
         height: 5.3rem; } }
     @media screen and (max-width: 480px) {
       .form__input_textarea {
-        height: 5.8rem; } }
+        height: 5.5rem; } }
   .form__input:focus {
     outline: none;
     border-color: #e01f3d; }
@@ -824,6 +830,9 @@ img {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .form__btns {
+      margin-top: 2.4rem; } }
 
 .radio {
   display: -webkit-box;
@@ -847,9 +856,8 @@ img {
       margin-right: 2rem; } }
   @media screen and (max-width: 480px) {
     .radio {
-      min-width: 12.8rem;
-      margin-top: 0.3rem;
-      margin-bottom: 0.3rem; } }
+      min-width: 12.6rem;
+      margin: 0.3rem 1rem; } }
 
 .radio__elem {
   display: none; }

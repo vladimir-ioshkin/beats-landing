@@ -8,6 +8,10 @@
   @include tablets {
     margin: 1.6rem 0 0.6rem;
   }
+
+  @include phones {
+    margin-top: 1.3rem;
+  }
 }
 
 .headline__subtitle {

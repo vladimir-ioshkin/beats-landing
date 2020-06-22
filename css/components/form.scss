@@ -108,7 +108,7 @@
     }
 
     @include phones {
-      height: 5.8rem;
+      height: 5.5rem;
     }
   }
 
@@ -145,5 +145,9 @@
   @include tablets {
     display: flex;
     justify-content: center;
+  }
+
+  @include phones {
+    margin-top: 2.4rem;
   }
 }

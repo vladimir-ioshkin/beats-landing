@@ -12,7 +12,7 @@
 
   @include phones {
     padding: 4rem 1rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.4rem;
   }
 
   &::before {
@@ -55,7 +55,7 @@
   }
 
   @include phones {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -98,7 +98,7 @@
 
   @include phones {
     font-size: 1.29rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1rem;
   }
 }
 
