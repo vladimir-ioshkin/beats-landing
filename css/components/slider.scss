@@ -63,6 +63,10 @@
   height: 5.625rem;
   margin-bottom: 1.7rem;
 
+  @include tablets {
+    display: none;
+  }
+
   &:hover .table {
     transition: 0.3s;
     display: block;
@@ -77,10 +81,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include tablets {
-    display: none;
-  }
 
   &:hover {
     cursor: pointer;
