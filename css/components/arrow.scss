@@ -1,0 +1,45 @@
+.arrow {
+  position: absolute;
+  width: 1rem;
+  transform: translate(-50%, -50%);
+  margin: 0 1rem;
+  top: 50%;
+  right: -4.5vw;
+
+  @include tablets {
+    top: 22.5vw;
+    left: 79%;
+  }
+
+  @include phones {
+    top: 27.6%;
+    left: 95%;
+  }
+
+  &_left {
+    right: initial;
+    left: -3vw;
+
+    @include tablets {
+      left: 17%;
+    }
+
+    @include phones {
+      left: -1.5%;
+    }
+  }
+
+  &_left .arrow__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.arrow__link {
+  display: block;
+  height: 30px;
+}
+
+.arrow__icon {
+  width: 100%;
+  height: 100%;
+}
