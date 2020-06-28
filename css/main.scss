@@ -1,14 +1,22 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $grey: #f5f5f5;
+$midgrey:#b2b2b2;
 $darkgrey: #666666;
 $red: #e01f3d;
 $darkred: #ca1b36;
 
 //z-indexes
 $z-fixed-menu: 100;
+
+//media
+@import "media";
 
 //normalize
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
@@ -22,6 +30,8 @@ $z-fixed-menu: 100;
 //components
 @import "components/hero.scss";
 @import "components/header.scss";
+@import "components/logo.scss";
+@import "components/phone-number.scss";
 @import "components/features.scss";
 @import "components/feature.scss";
 @import "components/btn.scss";
@@ -37,3 +47,8 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed--menu.scss";
+@import "components/hamburger.scss";
+@import "components/map-section.scss";
+@import "components/footer.scss";
+@import "components/contacts.scss";
+@import "components/socials.scss";

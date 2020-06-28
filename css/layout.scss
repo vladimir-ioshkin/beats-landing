@@ -1,10 +1,21 @@
+html {
+ font-size: $baseFontSize;
+
+ @include tablets {
+   font-size: $baseFontSize - 1px;
+ }
+
+ @include phones {
+    font-size: 3vmin;
+  }
+}
+
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  font-size: $baseFontSize;
   font-family: 'Play', sans-serif;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
@@ -16,14 +27,19 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
+  position: relative;
+
+  @include phones {
+    padding-top: 2rem;
+  }
 }
 
 h1,

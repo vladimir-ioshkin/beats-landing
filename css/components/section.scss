@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +12,32 @@
       color: #fff;
     }
   }
+
+  @include tablets { 
+    font-size: 1.07rem;
+  }
+
+  @include phones {
+    font-size: 1.14rem;
+    justify-content: flex-start;
+  }
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  margin: -4px 0 33px;
+  margin: -0.25rem 0 2.0625rem;
   text-align: center;
   color: #000;
   text-transform: uppercase;
+
+  @include tablets {
+    font-size: 3.2rem;
+    margin: -1.6rem 0 2.5rem;
+  }
+
+  @include phones {
+    font-size: 2.57rem;
+    margin: 4.3rem 0 1.8rem;
+  }
 }

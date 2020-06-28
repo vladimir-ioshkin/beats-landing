@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   font-weight: 700;
-  padding: 18px 41px;
+  padding: 1.125rem 2.5625rem;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
@@ -10,7 +10,16 @@
   background: $red;
   cursor: pointer;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
+
+  @include tablets {
+    padding: 1.3rem 2.9rem;
+  }
+
+  @include phones {
+    font-size: 1.14rem;
+    padding: 1.2rem 3rem;
+  }
 
   &:hover {
     background: $darkred;
@@ -20,14 +29,18 @@
     background: transparent;
     color: #999;
     text-transform: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    margin-left: 19px;
+    margin-left: 1.1875rem;
     padding: 0;
 
     &:hover {
       color: $red;
       background: none;
+    }
+
+    @include tablets {
+      margin-left: 2.9rem;
     }
   }
 }

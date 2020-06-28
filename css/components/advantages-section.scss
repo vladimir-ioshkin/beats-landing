@@ -6,12 +6,16 @@
     display: block;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 30px solid $red;
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-bottom: 1.875rem solid $red;
     position: absolute;
-    bottom: 3px;
+    bottom: 0.1875rem;
     left: 2.5%;
     transform: translate(50%, 50%) rotate(-16deg);
+
+    @include tablets {
+      left: 5.5%;
+    }
   }
 }
