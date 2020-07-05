@@ -1,4 +1,4 @@
-.slider {
+.slider__item {
   display: flex;
   justify-content: space-between;
   margin: 0 0.625rem;
@@ -10,13 +10,17 @@
   }
 
   @include phones {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 }
 
+.slider__item-wrap:focus {
+  outline: none;
+}
+
 .slider__content  {
-  max-width: 25.1875rem;
-  margin-top: -2.5rem;
+  max-width: 25.5rem;
+  // margin-top: -2.5rem;
   display: flex;
   flex-direction: column;
 
@@ -36,7 +40,7 @@
   background: #fff;
   flex: 0 0 auto;
   padding: 3.3rem 3.3rem 1.3rem 2.3rem;
-  margin: 0 3% 0 2%;
+  margin: 2.5rem 5.5% 0 2%;
 
   @include tablets {
     width: 41vw;
@@ -61,7 +65,7 @@
   position: relative;
   width: 5.625rem;
   height: 5.625rem;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.8rem;
 
   @include tablets {
     display: none;
@@ -84,6 +88,7 @@
 
   &:hover {
     cursor: pointer;
+    background: #6e6e6e;
   }
 }
 
@@ -94,7 +99,7 @@
 }
 
 .specifications__title {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #000;
   text-transform: uppercase;

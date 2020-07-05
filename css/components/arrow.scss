@@ -1,7 +1,7 @@
 .arrow {
   position: absolute;
   width: 1rem;
-  transform: translate(-50%, -50%);
+  transform: translate(-10%, -39%);
   margin: 0 1rem;
   top: 50%;
   right: -4.5vw;
@@ -14,6 +14,7 @@
   @include phones {
     top: 27.6%;
     left: 95%;
+    transform: translate(-10%, -115%)
   }
 
   &_left {
