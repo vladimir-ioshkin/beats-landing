@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 1.125rem 2.5625rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  background: $red;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include tablets {
+    padding: 1.3rem 2.9rem;
+  }
+
+  @include phones {
+    font-size: 1.14rem;
+    padding: 1.2rem 3rem;
+  }
+
+  &:hover {
+    background: $darkred;
+    transition: 0.3s;
+  }
+
+  &_color_transparent {
+    background: transparent;
+    color: #999;
+    text-transform: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-left: 1.1875rem;
+    padding: 0;
+
+    &:hover {
+      color: $red;
+      transition: 0.3s;
+      background: none;
+    }
+
+    @include tablets {
+      margin-left: 2.9rem;
+    }
+  }
+}

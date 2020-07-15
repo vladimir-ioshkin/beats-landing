@@ -1,0 +1,144 @@
+
+.player {
+  position: relative;
+  display: block;
+  width: 660px;
+  height: 405px;
+  margin: 0 auto;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 35px;
+  background: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  width: 100%;
+}
+
+.player__main-start {
+  background: url('../img/icons/play.svg') center center no-repeat;
+  width: 30px;
+  height: 46px;
+  outline: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.paused .player__main-start {
+  opacity: 0;
+  transition: .3s;
+}
+
+.player__start, .player__sound {
+  background: url('../img/icons/play.svg') center center no-repeat;
+  width: 16px;
+  height: 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.muted::after {
+  content: "";
+  width: 3px;
+  height: 30px;
+  background-color: #efebeb;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  border-radius: 28%;
+}
+
+.paused .player__start {
+  background: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background: #efebeb;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+}
+
+.player__playback, .player__sound-bar {
+  height: 16px;
+  width: 436px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #303030;
+    transform: translateY(-50%);
+  }
+}
+
+.player__playback-btn, .player__sound-btn {
+  background: $red;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__sound-bar-colored, .player__playback-colored {
+  background: $red;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.player__playback-colored {
+  width: 0;
+}
+
+.player__sound-btn {
+  left: 100%;
+}
+
+.player__sound {
+  background: url('../img/icons/volume.svg') center center no-repeat;
+}
+
+.player__sound-bar {
+  width: 60px;
+}
+

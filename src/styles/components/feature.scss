@@ -1,0 +1,19 @@
+.feature {
+  display: flex;
+}
+
+.feature__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-right: 0.5rem;
+}
+
+.feature__icon-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.feature__text {
+  max-width: 6rem;
+  line-height: 1.24;
+}
