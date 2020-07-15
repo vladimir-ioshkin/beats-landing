@@ -18,7 +18,6 @@
   }
 
   $('.team__btn').click((e) => {
-    // e.preventDefault;
     const $this = $(e.currentTarget);
     const container = $this.closest(".team");
     const elemContainer = $this.closest(".team__item");

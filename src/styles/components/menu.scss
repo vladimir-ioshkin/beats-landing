@@ -1,4 +1,4 @@
-.menu-section {
+.section.menu-section {
   background: url('src/img/content/menu-silver.png') #000 center center/cover no-repeat;
   height: 100vh;
   position: relative;
@@ -6,7 +6,7 @@
   justify-content: flex-start;
 }
 
-.menu-section__title {
+.section__title.menu-section__title {
   color: #fff;
   text-align: left;
   margin: 6.125rem 0 0 5rem;
@@ -59,10 +59,6 @@
   position: absolute;
   bottom: 4.5rem;
   font-size: 2.25rem;
-
-  // @include tablets {
-  //   font-size: ;
-  // }
 }
 
 .menu__container {

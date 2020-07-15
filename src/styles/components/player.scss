@@ -1,29 +1,44 @@
-
 .player {
   position: relative;
   display: block;
-  width: 660px;
-  height: 405px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 41.25rem;
+
+  @include tablets {
+    width: 95%;
+  }
+
+  @include phones {
+    max-height: 21.07rem;
+  }
+}
+
+.player__video {
+  width: 100%;
 }
 
 .player__controls {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 35px;
+  height: 2.1875rem;
   background: #151515;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 1.5625rem;
   width: 100%;
+
+  @include phones {
+    padding: 0 0.857rem;
+  }
 }
 
 .player__main-start {
   background: url('src/img/icons/play.svg') center center no-repeat;
-  width: 30px;
-  height: 46px;
+  width: 1.875rem;
+  height: 2.875rem;
   outline: none;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -40,8 +55,8 @@
 
 .player__start, .player__sound {
   background: url('src/img//icons/play.svg') center center no-repeat;
-  width: 16px;
-  height: 22px;
+  width: 1rem;
+  height: 1.375rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -51,7 +66,7 @@
 .muted::after {
   content: "";
   width: 3px;
-  height: 30px;
+  height: 1.875rem;
   background-color: #efebeb;
   transform: translate(-50%, -50%) rotate(-45deg);
   position: absolute;
@@ -84,8 +99,8 @@
 }
 
 .player__playback, .player__sound-bar {
-  height: 16px;
-  width: 436px;
+  height: 1rem;
+  width: 74%;
   position: relative;
   cursor: pointer;
 
@@ -105,8 +120,8 @@
   background: $red;
   border-radius: 50%;
   border: none;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   padding: 0;
   position: absolute;
   top: 50%;
@@ -139,6 +154,6 @@
 }
 
 .player__sound-bar {
-  width: 60px;
+  width: 10%;
 }
 

@@ -1,12 +1,37 @@
 .player-section {
   background: $grey;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
+  position: relative;
+  
+  @include phones {
+    padding-top: 11.429rem
+  }
 }
 
-.player-section__container {
-  width: 660px;
-  height: 406px;
-  margin: 0 auto;
+.player__pentagon-wrap {
+  position: absolute;
+  transform: scale(0.5) rotate(-9deg);
+  bottom: -4%;
+  right: 10%;
+}
+
+.player__pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: $red transparent;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -84px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent $red;
+  }
 }
