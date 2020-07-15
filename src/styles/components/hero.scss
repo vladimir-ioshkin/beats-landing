@@ -8,7 +8,7 @@
 
   &::before {
     content: "";
-    background: url("../img/headphones-img.jpg") -0.3125rem 0.4375rem no-repeat #fff;
+    background: url("src/img/headphones-img.jpg") -0.3125rem 0.4375rem no-repeat #fff;
     background-size: contain;
     width: 45vw;
     height: 45vw;
@@ -54,7 +54,7 @@
       content: "";
       width: 22.7rem;
       height: 22.7rem;
-      background: url("../img/headphones-img.jpg") -0.1875rem 0.0625rem no-repeat #fff;
+      background: url("src/img/headphones-img.jpg") -0.1875rem 0.0625rem no-repeat #fff;
       background-size: contain;
       border-radius: 50%; 
       border: 0.25rem solid #fff;

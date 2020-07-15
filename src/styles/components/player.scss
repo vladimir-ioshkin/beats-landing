@@ -21,7 +21,7 @@
 }
 
 .player__main-start {
-  background: url('../img/icons/play.svg') center center no-repeat;
+  background: url('src/img/icons/play.svg') center center no-repeat;
   width: 30px;
   height: 46px;
   outline: none;
@@ -39,7 +39,7 @@
 }
 
 .player__start, .player__sound {
-  background: url('../img/icons/play.svg') center center no-repeat;
+  background: url('src/img//icons/play.svg') center center no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
@@ -135,7 +135,7 @@
 }
 
 .player__sound {
-  background: url('../img/icons/volume.svg') center center no-repeat;
+  background: url('src/img/icons/volume.svg') center center no-repeat;
 }
 
 .player__sound-bar {
