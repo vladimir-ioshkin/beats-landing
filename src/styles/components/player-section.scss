@@ -10,9 +10,15 @@
 
 .player__pentagon-wrap {
   position: absolute;
-  transform: scale(0.5) rotate(-9deg);
+  transform: scale(0.4) rotate(-9deg);
   bottom: -4%;
   right: 10%;
+
+  @include phones {
+    transform: scale(0.3) rotate(-9deg);
+    bottom: -6%;
+    right: 5%;
+  }
 }
 
 .player__pentagon {
