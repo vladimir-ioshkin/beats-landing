@@ -1,6 +1,6 @@
 .reviews__display {
   background: $grey;
-  padding: 3.125rem 2.875rem 2.25rem;
+  padding: 3.125rem 2.875rem 1rem;
   margin-bottom: 1.25rem;
   overflow: hidden;
   position: relative;
@@ -26,6 +26,26 @@
     left: 50%;
     top: -4.0625rem;
     transform: translate(-50%);
+  }
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 17.5rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .3s;
+  opacity: 0;
+
+  &_active {
+    position: static;
+    opacity: 1;
   }
 }
 

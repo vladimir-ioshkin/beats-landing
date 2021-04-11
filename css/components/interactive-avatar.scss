@@ -16,6 +16,10 @@
     margin: 0 0.4rem;
   }
 
+  &:hover {
+    border-color: $red;
+  }
+
   &_active {
     border-color: $red;
   }
