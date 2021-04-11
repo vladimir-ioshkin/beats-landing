@@ -1,0 +1,89 @@
+.section.menu-section {
+  background: url('src/img/content/menu-silver.png') #000 center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.section__title.menu-section__title {
+  color: #fff;
+  text-align: left;
+  margin: 6.125rem 0 0 5rem;
+}
+
+.menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.menu__item {
+  display: flex;
+
+  &.hidden {
+    .menu__title {
+      width: 0;
+    }
+
+    .menu__text {
+      display: none;
+    }
+  }
+}
+
+.menu__title {
+  position: relative;
+  width: 6.25rem;
+  background: #999;
+
+  &_black {
+    background: #151515;
+  }
+
+  &_red {
+    background: #e01f3d;
+  }
+
+  @include phones {
+    width: 5.71rem;
+  }
+}
+
+.menu__text {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+  position: absolute;
+  bottom: 4.5rem;
+  font-size: 2.25rem;
+}
+
+.menu__container {
+  padding: 2.5rem 4.5625rem 2.8125rem 1.625rem;
+  position: relative;
+
+  @include phones {
+    padding: 4.125rem 1.875rem 3.125rem 1.375rem;
+  }
+}
+
+.menu__close {
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5625rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.menu__content {
+  background: rgba(58, 60, 62, .93);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+}
